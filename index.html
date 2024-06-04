@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CAL-C</title>
+<!-- CSS -->
+    <style>
+        #heading {
+			margin-left: 765px;	
+            color: rgb(83, 83, 83);
+            font-size: 35px;
+            font-family: 'Major Mono Display';
+        }
+
+		.CALC{
+			background-color: #94A8B7;
+			width: 474px;
+			height:  741px;
+			border-radius: 22px;
+			padding-top: 24px;
+			margin: auto;
+			padding-left: 15px;
+			box-shadow: 4px 4px 4px 0 rgba(42, 66, 85, 0.8);
+		}	
+
+		button.centresev{
+			border:outset;
+			width: 100px;
+			height:99px;
+			background-color: #D9D9D9;
+			border-radius: 6px;
+			text-align: center;
+			font-family:'Major Mono Display';
+			font-size: 45px;
+			float: left;
+			margin-left: 7.5px;
+			margin-right: 7.5px;
+			transition-duration: 0.4s;
+		}
+		button.centreeig{border:outset;
+			width: 100px;
+			height:99px;
+			background-color: #D9D9D9;
+			border-radius: 6px;
+			text-align: center;
+			font-family:'Major Mono Display';
+			font-size: 45px;
+			float: left;
+			margin-left: 7.5px;
+			margin-right: 7.5px; 
+			transition-duration: 0.4s;
+		}
+		button.centrenin{border:outset;
+			width: 100px;
+			height:99px;
+			background-color: #D9D9D9;
+			border-radius: 6px;
+			text-align: center;
+			font-family:'Major Mono Display';
+			font-size: 45px;
+			float: left;
+			margin-left: 7.5px;
+			margin-right: 7.5px;
+			transition-duration: 0.4s;
+		}
+		button.centreplu{border:outset;
+			width: 100px;
+			height:99px;
+			background-color: #D9D9D9;
+			border-radius: 6px;
+			text-align: center;
+			font-family:'Major Mono Display';
+			font-size: 45px;
+			float: left;
+			margin-left: 7.5px;
+			margin-right: 7.5px;
+			transition-duration: 0.4s;
+		}
+
+		
+		button.centrefour{border:outset;
+			width: 100px;
+			height:99px;
+			background-color: #D9D9D9;
+			border-radius: 6px;
+			text-align: center;
+			font-family:'Major Mono Display';
+			font-size: 45px;
+			float: left;
+			margin-left: 7.5px;
+			margin-right: 7.5px;
+			transition-duration: 0.4s;
+			margin-top: 15px;
+		}
+
+		button.centrefive{border:outset;
+			width: 100px;
+			height:99px;
+			background-color: #D9D9D9;
+			border-radius: 6px;
+			text-align: center;
+			font-family:'Major Mono Display';
+			font-size: 45px;
+			float: left;
+			margin-left: 7.5px;
+			transition-duration: 0.4s;
+			margin-right: 7.5px;
+			margin-top: 15px;
+		}
+		button.centresix{border:outset;
+			width: 100px;
+			height:99px;
+			background-color: #D9D9D9;
+			border-radius: 6px;
+			text-align: center;
+			font-family:'Major Mono Display';
+			font-size: 45px;
+			float: left;
+			margin-left: 7.5px;
+			margin-right: 7.5px;
+			transition-duration: 0.4s;
+			margin-top: 15px;
+		}
+		button.centreminu{border:outset;
+			width: 100px;
+			height:99px;
+			background-color: #D9D9D9;
+			border-radius: 6px;
+			text-align: center;
+			font-family:'Major Mono Display';
+			font-size: 45px;
+			float: left;
+			margin-left: 7.5px;
+			margin-right: 7.5px;
+			transition-duration: 0.4s;
+			margin-top: 15px;
+		}
+		
+		button.centrethree{border:outset;
+			width: 100px;
+			height:99px;
+			background-color: #D9D9D9;
+			border-radius: 6px;
+			text-align: center;
+			font-family:'Major Mono Display';
+			font-size: 45px;
+			float: left;
+			margin-left: 7.5px;
+			margin-right: 7.5px;
+			transition-duration: 0.4s;
+			margin-top: 15px;
+		}
+
+		button.centretwo{border:outset;
+			width: 100px;
+			height:99px;
+			background-color: #D9D9D9;
+			border-radius: 6px;
+			text-align: center;
+			font-family:'Major Mono Display';
+			font-size: 45px;
+			float: left;
+			margin-left: 7.5px;
+			margin-right: 7.5px;
+			transition-duration: 0.4s;
+			margin-top: 15px;
+		}
+
+		button.centreone{border:outset;
+			width: 100px;
+			height:99px;
+			background-color: #D9D9D9;
+			border-radius: 6px;
+			text-align: center;
+			font-family:'Major Mono Display';
+			font-size: 45px;
+			float: left;
+			margin-left: 7.5px;
+			margin-right: 7.5px;
+			margin-top: 15px;
+			transition-duration: 0.4s;
+		}
+
+		button.centrex{border:outset;
+			width: 100px;
+			height:99px;
+			background-color: #D9D9D9;
+			border-radius: 6px;
+			text-align: center;
+			font-family:'Major Mono Display';
+			font-size: 30px;
+			float: left;
+			margin-left: 7.5px;
+			margin-right: 7.5px;
+			margin-top: 15px;
+			transition-duration: 0.4s;
+		}
+
+		.zero{
+			border:outset;
+			width: 100px;
+			height:99px;
+			background-color: #D9D9D9;
+			border-radius: 6px;
+			text-align: center;
+			font-family:'Major Mono Display';
+			font-size: 45px;
+			margin-left: 7.5px;
+			margin-right: 7.5px;
+			margin-top: 15px;
+			float: left;
+			transition-duration: 0.4s;
+		}
+		
+		.clear{
+			border:outset;
+			width: 100px;
+			height:99px;
+			background-color: #D9D9D9;
+			border-radius: 6px;
+			text-align: center;
+			font-family:'Major Mono Display';
+			font-size: 45px;
+			margin-left: 7.5px;
+			margin-right: 7.5px;
+			margin-top: 15px;
+			float: left;
+			transition-duration: 0.4s;
+		}
+
+		.centrequ{border:outset;
+			width: 100px;
+			height:99px;
+			background-color: #D9D9D9;
+			border-radius: 6px;
+			text-align: center;
+			font-family:'Major Mono Display';
+			font-size: 45px;
+			margin-left: 7.5px;
+			margin-right: 7.5px;
+			margin-top: 15px;
+			float: left;
+			transition-duration: 0.4s;
+		}
+
+		.centreslas{border:outset;
+			width: 100px;
+			height:99px;
+			background-color: #D9D9D9;
+			border: none;
+			border-radius: 6px;
+			text-align: center;
+			font-family:'Major Mono Display';
+			font-size: 45px;
+			margin-left: 7.5px;
+			margin-right: 7.5px;
+			margin-top: 15px;
+			float: left;
+			transition-duration: 0.4s;
+		}
+		#display{
+			background-color: #EEF7FE;
+			width: 445px;
+			height: 84px;
+			border-radius: 9px;
+			margin-top: 12px;
+			text-align: center;
+			padding-top: 55px;
+			font-family:'Major Mono Display';
+			font-size: 50px;
+			margin-left: 4.5px;
+			margin-bottom: 62px;
+			transition-duration: 0.4s;
+			box-shadow: 0px 0px 8px 0 rgba(85, 119, 155, 0.8) inset;
+		}
+		
+
+		button.centresev:hover{
+			box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+		}
+		button.centreeig:hover{
+			box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+		}
+		button.centrenin:hover{
+			box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+		}
+		button.centreplu:hover{
+			box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+		}
+		button.centrefour:hover{
+			box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+		}
+		button.centrefive:hover{
+			box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+		}
+		button.centresix:hover{
+			box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+		}
+		button.centreminu:hover{
+			box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+		}
+		button.centreone:hover{
+			box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+		}
+		button.centretwo:hover{
+			box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+		}
+		button.centrethree:hover{
+			box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+		}
+		button.centrex:hover{
+			box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+		}
+		button.zero:hover{
+			box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+		}
+		button.centrequ:hover{
+			box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+		}
+		button.centreslas:hover{
+			box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+		}
+		button.clear:hover{
+			box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+		}
+		
+		
+
+    </style>
+</head>
+<body>
+	
+    <P id="heading">
+        cal-c
+    </P>
+<div class="CALC">
+
+	<div class="screen">
+		<input id="display" readonly>
+	</div>
+
+	<div id="keys"> 
+		<div id="button" onclick="appendtoD('7')">
+			<button class="centresev">
+				7
+			</button>
+		</div>
+
+		<div id="button" onclick="appendtoD('8')">
+			<button class="centreeig">
+				8
+			</button>
+		</div>
+
+		<div id="button" onclick="appendtoD('9')">
+			<button class="centrenin">
+				9
+			</button>
+		</div>
+
+		<div id="button" onclick="appendtoD('+')">
+			<button class="centreplu">
+				+
+			</button>
+		</div>
+
+		<div id="button" onclick="appendtoD('4')">
+			<button class="centrefour">
+				4
+			</button>
+		</div>
+
+		<div id="button" onclick="appendtoD('5')">
+			<button class="centrefive">
+				5
+			</button>
+		</div>
+
+		<div id="button" onclick="appendtoD('6')">
+			<button class="centresix">
+				6
+			</button>
+		</div>
+
+		<div id="button" onclick="appendtoD('-')">
+			<button class="centreminu">
+				&#x2212;
+			</button>
+		</div>
+
+		<div id="button" onclick="appendtoD('1')">
+			<button class="centreone">
+				1
+			</button>
+		</div>
+
+		<div id="button" onclick="appendtoD('2')">
+			<button class="centretwo">
+				2
+			</button>
+		</div>
+
+		<div id="button" onclick="appendtoD('3')">
+			<button class="centrethree">
+				3
+			</button>
+		</div>
+
+		<div id="button" onclick="appendtoD('*')">
+			<button class="centrex">
+				x
+			</button>
+		</div>
+
+		<div id="button" onclick="clearD()">
+			<button class="clear">
+				C
+			</button>
+		</div>
+
+		<div>
+			<button onclick="appendtoD('0')" class="zero">
+				0
+			</button>
+		</div>
+
+		<div id="button" onclick="calculate()">
+			<button class="centrequ">
+				=
+			</button>
+
+		<div id="button" onclick="appendtoD('/')">
+			<button class="centreslas">
+				/
+			</button>
+		</div>
+	</div>
+</div>
+
+<script>
+	const display = document.getElementById("display");
+
+		function appendtoD(input){
+			display.value += input
+		}
+		
+		function clearD(){
+			display.value="";
+		}
+		
+		function calculate(){
+			display.value=eval(display.value);
+		}
+	</script>
+
+</body>
+</html>
